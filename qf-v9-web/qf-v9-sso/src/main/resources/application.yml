@@ -1,0 +1,17 @@
+dubbo:
+  application:
+    name: sso
+  registry:
+    protocol: zookeeper
+    address: 10.36.8.8:2181
+server:
+  port: 9098
+spring:
+  redis:
+    host: 10.36.8.8
+    port: 6379
+    jedis:
+      pool:
+        max-active: 20
+    password: java1809
+

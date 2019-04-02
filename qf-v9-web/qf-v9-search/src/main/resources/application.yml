@@ -1,0 +1,11 @@
+dubbo:
+  application:
+    name: search
+  registry:
+    protocol: zookeeper
+    address: 10.36.8.8:2181
+server:
+  port: 9092
+spring:
+  thymeleaf:
+    cache: false

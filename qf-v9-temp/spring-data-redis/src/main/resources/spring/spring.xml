@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 配置redis连接池对象 -->
+    <bean id="poolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <!-- 最大空闲数 -->
+        <property name="maxIdle" value="50" />
+        <!-- 最大连接数 -->
+        <property name="maxTotal" value="100" />
+        <!-- 最大等待时间 -->
+        <property name="maxWaitMillis" value="20000" />
+    </bean>
+
+    <!-- 哨兵配置 -->
+    <bean id="sentinelConfig" class="org.springframework.data.redis.connection.RedisSentinelConfiguration">
+        <!-- 配置master主服务的名称 -->
+        <property name="master">
+            <bean class="org.springframework.data.redis.connection.RedisNode">
+                <property name="name" value="mymaster"/>
+            </bean>
+        </property>
+        <!-- 配置哨兵服务 -->
+        <property name="sentinels">
+            <set>
+                <bean class="org.springframework.data.redis.connection.RedisNode">
+                    <constructor-arg name="host" value="192.168.77.137"/>
+                    <constructor-arg name="port" value="26379"/>
+                </bean>
+                <bean class="org.springframework.data.redis.connection.RedisNode">
+                    <constructor-arg name="host" value="192.168.77.137"/>
+                    <constructor-arg name="port" value="26380"/>
+                </bean>
+                <bean class="org.springframework.data.redis.connection.RedisNode">
+                    <constructor-arg name="host" value="192.168.77.137"/>
+                    <constructor-arg name="port" value="26381"/>
+                </bean>
+            </set>
+        </property>
+    </bean>
+
+    <!-- Redis集群配置 -->
+    <bean id="redisClusterConfiguration"
+          class="org.springframework.data.redis.connection.RedisClusterConfiguration">
+        <property name="clusterNodes">
+            <set>
+                <bean class="org.springframework.data.redis.connection.RedisNode">
+                    <constructor-arg name="host" value="192.168.77.137"/>
+                    <constructor-arg name="port" value="6379"/>
+                </bean>
+                <bean class="org.springframework.data.redis.connection.RedisNode">
+                    <constructor-arg name="host" value="192.168.77.137"/>
+                    <constructor-arg name="port" value="6380"/>
+                </bean>
+                <bean class="org.springframework.data.redis.connection.RedisNode">
+                    <constructor-arg name="host" value="192.168.77.137"/>
+                    <constructor-arg name="port" value="6381"/>
+                </bean>
+                <bean class="org.springframework.data.redis.connection.RedisNode">
+                    <constructor-arg name="host" value="192.168.77.137"/>
+                    <constructor-arg name="port" value="6382"/>
+                </bean>
+                <bean class="org.springframework.data.redis.connection.RedisNode">
+                    <constructor-arg name="host" value="192.168.77.137"/>
+                    <constructor-arg name="port" value="6383"/>
+                </bean>
+                <bean class="org.springframework.data.redis.connection.RedisNode">
+                    <constructor-arg name="host" value="192.168.77.137"/>
+                    <constructor-arg name="port" value="6384"/>
+                </bean>
+            </set>
+        </property>
+    </bean>
+    
+    <!-- 配置redis连接工厂 -->
+    <bean id="connectionFactory"
+          class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
+       <!-- <constructor-arg name="sentinelConfig" ref="sentinelConfig"/>-->
+        <constructor-arg name="clusterConfig" ref="redisClusterConfiguration"/>
+        <!-- 连接池配置 -->
+        <property name="poolConfig" ref="poolConfig" />
+        <!--&lt;!&ndash; 连接主机 &ndash;&gt;
+        <property name="hostName" value="192.168.77.137" />
+        &lt;!&ndash; 端口 &ndash;&gt;
+        <property name="port" value="6379" />-->
+        <!-- 密码 -->
+        <!--<property name="password" value="java1809" />-->
+    </bean>
+
+    <bean id="stringRedisSerializer" class="org.springframework.data.redis.serializer.StringRedisSerializer"></bean>
+    <!-- 配置redis模板对象 -->
+    <bean class="org.springframework.data.redis.core.RedisTemplate">
+        <!-- 配置连接工厂 -->
+        <property name="connectionFactory" ref="connectionFactory" />
+        <!--自定义key序列化方式-->
+        <property name="keySerializer" ref="stringRedisSerializer"/>
+        <!--<property name="valueSerializer" ref="stringRedisSerializer"/>-->
+    </bean>
+
+    <bean id="myMessageListener" class="com.qf.listener.MyMessageListener"></bean>
+
+    <bean id="messageListenerContainer" class="org.springframework.data.redis.listener.RedisMessageListenerContainer"
+          destroy-method="destroy">
+        <!-- redis连接工厂 -->
+        <property name="connectionFactory" ref="connectionFactory"/>
+        <!-- 配置监听配置 -->
+        <property name="messageListeners">
+            <map>
+                <!-- 配置监听器 -->
+                <entry key-ref="myMessageListener">
+                    <!-- 配置监听的渠道 -->
+                    <bean class="org.springframework.data.redis.listener.ChannelTopic">
+                        <!--  -->
+                        <constructor-arg name="name" value="nba"/>
+                    </bean>
+                </entry>
+            </map>
+        </property>
+    </bean>
+</beans>

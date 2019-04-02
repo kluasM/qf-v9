@@ -1,0 +1,11 @@
+dubbo:
+  application:
+    name: cart
+  registry:
+    protocol: zookeeper
+    address: 10.36.8.8:2181
+server:
+  port: 9099
+spring:
+  thymeleaf:
+    cache: false

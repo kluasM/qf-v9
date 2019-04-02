@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-temp/httpclient/httpclient.iml" filepath="$PROJECT_DIR$/qf-v9-temp/httpclient/httpclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-temp/jedis/jedis.iml" filepath="$PROJECT_DIR$/qf-v9-temp/jedis/jedis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9.iml" filepath="$PROJECT_DIR$/qf-v9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-api/qf-v9-api.iml" filepath="$PROJECT_DIR$/qf-v9-api/qf-v9-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-basic/qf-v9-basic.iml" filepath="$PROJECT_DIR$/qf-v9-basic/qf-v9-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-web/qf-v9-cart/qf-v9-cart.iml" filepath="$PROJECT_DIR$/qf-v9-web/qf-v9-cart/qf-v9-cart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-api/qf-v9-cart-api/qf-v9-cart-api.iml" filepath="$PROJECT_DIR$/qf-v9-api/qf-v9-cart-api/qf-v9-cart-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-basic/qf-v9-common/qf-v9-common.iml" filepath="$PROJECT_DIR$/qf-v9-basic/qf-v9-common/qf-v9-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-api/qf-v9-email-api/qf-v9-email-api.iml" filepath="$PROJECT_DIR$/qf-v9-api/qf-v9-email-api/qf-v9-email-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-basic/qf-v9-entity/qf-v9-entity.iml" filepath="$PROJECT_DIR$/qf-v9-basic/qf-v9-entity/qf-v9-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-web/qf-v9-index/qf-v9-index.iml" filepath="$PROJECT_DIR$/qf-v9-web/qf-v9-index/qf-v9-index.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-api/qf-v9-item-api/qf-v9-item-api.iml" filepath="$PROJECT_DIR$/qf-v9-api/qf-v9-item-api/qf-v9-item-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-basic/qf-v9-mapper/qf-v9-mapper.iml" filepath="$PROJECT_DIR$/qf-v9-basic/qf-v9-mapper/qf-v9-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-web/qf-v9-order/qf-v9-order.iml" filepath="$PROJECT_DIR$/qf-v9-web/qf-v9-order/qf-v9-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-api/qf-v9-product-api/qf-v9-product-api.iml" filepath="$PROJECT_DIR$/qf-v9-api/qf-v9-product-api/qf-v9-product-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-api/qf-v9-search-api/qf-v9-search-api.iml" filepath="$PROJECT_DIR$/qf-v9-api/qf-v9-search-api/qf-v9-search-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-service/qf-v9-service.iml" filepath="$PROJECT_DIR$/qf-v9-service/qf-v9-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-api/qf-v9-sms-api/qf-v9-sms-api.iml" filepath="$PROJECT_DIR$/qf-v9-api/qf-v9-sms-api/qf-v9-sms-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-temp/qf-v9-temp.iml" filepath="$PROJECT_DIR$/qf-v9-temp/qf-v9-temp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-api/qf-v9-user-api/qf-v9-user-api.iml" filepath="$PROJECT_DIR$/qf-v9-api/qf-v9-user-api/qf-v9-user-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-web/qf-v9-web.iml" filepath="$PROJECT_DIR$/qf-v9-web/qf-v9-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-temp/rabbitmq-java/rabbitmq-java.iml" filepath="$PROJECT_DIR$/qf-v9-temp/rabbitmq-java/rabbitmq-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qf-v9-temp/spring-data-redis/spring-data-redis.iml" filepath="$PROJECT_DIR$/qf-v9-temp/spring-data-redis/spring-data-redis.iml" />
+    </modules>
+  </component>
+</project>
