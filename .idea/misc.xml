@@ -10,6 +10,15 @@
         <option value="$PROJECT_DIR$/qf-v9-web/qf-v9-cart/pom.xml" />
         <option value="$PROJECT_DIR$/qf-v9-web/qf-v9-index/pom.xml" />
         <option value="$PROJECT_DIR$/qf-v9-web/qf-v9-order/pom.xml" />
+        <option value="$PROJECT_DIR$/qf-v9-service/qf-v9-product-service/pom.xml" />
+        <option value="$PROJECT_DIR$/qf-v9-service/qf-v9-cart-service/pom.xml" />
+        <option value="$PROJECT_DIR$/qf-v9-service/qf-v9-item-service/pom.xml" />
+        <option value="$PROJECT_DIR$/qf-v9-service/qf-v9-mail-service/pom.xml" />
+        <option value="$PROJECT_DIR$/qf-v9-service/qf-v9-search-service/pom.xml" />
+        <option value="$PROJECT_DIR$/qf-v9-service/qf-v9-sms-service/pom.xml" />
+        <option value="$PROJECT_DIR$/qf-v9-service/qf-v9-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/qf-v9-web/qf-v9-search/pom.xml" />
+        <option value="$PROJECT_DIR$/qf-v9-web/qf-v9-sso/pom.xml" />
       </list>
     </option>
   </component>

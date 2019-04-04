@@ -2,5 +2,15 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/qf-v9-service/qf-v9-cart-service" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/qf-v9-service/qf-v9-item-service" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/qf-v9-service/qf-v9-mail-service" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/qf-v9-service/qf-v9-product-service" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/qf-v9-service/qf-v9-search-service" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/qf-v9-service/qf-v9-sms-service" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/qf-v9-service/qf-v9-user-service" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/qf-v9-web/qf-v9-search" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/qf-v9-web/qf-v9-sso" vcs="svn" />
   </component>
 </project>

@@ -2,8 +2,17 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/qf-v9-basic/qf-v9-mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qf-v9-service/qf-v9-cart-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qf-v9-service/qf-v9-item-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qf-v9-service/qf-v9-mail-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qf-v9-service/qf-v9-product-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qf-v9-service/qf-v9-search-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qf-v9-service/qf-v9-sms-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qf-v9-service/qf-v9-user-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/qf-v9-web/qf-v9-cart" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/qf-v9-web/qf-v9-index" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/qf-v9-web/qf-v9-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qf-v9-web/qf-v9-search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/qf-v9-web/qf-v9-sso" charset="UTF-8" />
   </component>
 </project>

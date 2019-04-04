@@ -10,18 +10,27 @@
         <module name="jedis" />
         <module name="qf-v9-cart" />
         <module name="qf-v9-cart-api" />
+        <module name="qf-v9-cart-service" />
         <module name="qf-v9-common" />
         <module name="qf-v9-email-api" />
         <module name="qf-v9-entity" />
         <module name="qf-v9-index" />
         <module name="qf-v9-item-api" />
+        <module name="qf-v9-item-service" />
+        <module name="qf-v9-mail-service" />
         <module name="qf-v9-mapper" />
         <module name="qf-v9-order" />
         <module name="qf-v9-product-api" />
+        <module name="qf-v9-product-service" />
+        <module name="qf-v9-search" />
         <module name="qf-v9-search-api" />
+        <module name="qf-v9-search-service" />
         <module name="qf-v9-service" />
         <module name="qf-v9-sms-api" />
+        <module name="qf-v9-sms-service" />
+        <module name="qf-v9-sso" />
         <module name="qf-v9-user-api" />
+        <module name="qf-v9-user-service" />
         <module name="qf-v9-web" />
         <module name="rabbitmq-java" />
         <module name="spring-data-redis" />
@@ -35,19 +44,28 @@
       <module name="qf-v9-basic" target="1.5" />
       <module name="qf-v9-cart" target="1.8" />
       <module name="qf-v9-cart-api" target="1.5" />
+      <module name="qf-v9-cart-service" target="1.8" />
       <module name="qf-v9-common" target="1.5" />
       <module name="qf-v9-email-api" target="1.5" />
       <module name="qf-v9-entity" target="1.5" />
       <module name="qf-v9-index" target="1.8" />
       <module name="qf-v9-item-api" target="1.5" />
+      <module name="qf-v9-item-service" target="1.8" />
+      <module name="qf-v9-mail-service" target="1.8" />
       <module name="qf-v9-mapper" target="1.8" />
       <module name="qf-v9-order" target="1.8" />
       <module name="qf-v9-product-api" target="1.5" />
+      <module name="qf-v9-product-service" target="1.8" />
+      <module name="qf-v9-search" target="1.8" />
       <module name="qf-v9-search-api" target="1.5" />
+      <module name="qf-v9-search-service" target="1.8" />
       <module name="qf-v9-service" target="1.5" />
       <module name="qf-v9-sms-api" target="1.5" />
+      <module name="qf-v9-sms-service" target="1.8" />
+      <module name="qf-v9-sso" target="1.8" />
       <module name="qf-v9-temp" target="1.5" />
       <module name="qf-v9-user-api" target="1.5" />
+      <module name="qf-v9-user-service" target="1.8" />
       <module name="qf-v9-web" target="1.5" />
       <module name="rabbitmq-java" target="1.5" />
       <module name="spring-data-redis" target="1.5" />
